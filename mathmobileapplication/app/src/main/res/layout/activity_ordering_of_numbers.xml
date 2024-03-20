@@ -1,0 +1,106 @@
+<!-- res/layout/activity_ordering_of_numbers.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textOrderMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textOrderMessage"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <!-- Buttons for each number -->
+        <Button
+            android:id="@+id/btnNumber1"
+            style="@style/NumberButtonStyle"
+            android:layout_weight="1"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btnNumber2"
+            style="@style/NumberButtonStyle"
+            android:layout_weight="1"
+            android:onClick="onNumberButtonClick"
+            />
+
+
+        <Button
+            android:id="@+id/btnNumber3"
+            style="@style/NumberButtonStyle"
+            android:layout_weight="1"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btnNumber4"
+            style="@style/NumberButtonStyle"
+            android:layout_weight="1"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btnNumber5"
+            style="@style/NumberButtonStyle"
+            android:layout_weight="1"
+            android:onClick="onNumberButtonClick"/>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/editTextOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayoutNumbers"
+        android:layout_marginTop="16dp"
+        android:background="#E1BEE7"
+        android:gravity="center"
+        android:minHeight="48dp"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/editTextOrder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/OrderButtonStyle"
+            android:text="@string/delete"
+            android:onClick="onDeleteButtonClick"/>
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/OrderButtonStyle"
+            android:text="@string/clear"
+            android:onClick="onClearButtonClick"/>
+
+        <Button
+            android:id="@+id/btnCheckOrder"
+            style="@style/OrderButtonStyle"
+            android:text="@string/check_order"
+            android:onClick="onCheckOrderClick"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageMath"
+        android:layout_width="395dp"
+        android:layout_height="315dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="71dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/math3" />
+
+</RelativeLayout>

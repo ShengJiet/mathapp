@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- App Name -->
+    <string name="app_name">MathApp</string>
+
+    <!-- Strings for Comparing Numbers Activity -->
+    <string name="compare_numbers">Compare the numbers: %1$d and %2$d</string>
+    <string name="correct_answer">Correct Answer!</string>
+    <string name="try_again">Try again. Choose the correct symbol.Compare the numbers again for %1$d and %2$d</string>
+    <string name="more_than"><![CDATA[>]]></string>
+    <string name="less_than"><![CDATA[<]]></string>
+
+
+
+    <!-- Strings for Composing Numbers Activity -->
+    <string name="top_number_label">Top Number:</string>
+    <string name="check_answer_button">Check Answer</string>
+    <string name="correct_answer_message">Correct Answer!</string>
+    <string name="incorrect_answer_message">Incorrect Answer, try again!</string>
+    <string name="compose_numbers_exercise">Compose the number %1$d by two digits.</string>
+    <string name="select_two_numbers">Please select two numbers first</string>
+    <string name="check_answer">check_answer\n</string>
+
+    <!-- Strings for Ordering Of Numbers Activity -->
+    <string name="delete">Delete</string>
+    <string name="clear">Clear</string>
+    <string name="check_order">Check Order</string>
+    <string name="make_numbers_ascending_order">Make the numbers in ascending order.Good Luck.</string>
+    <string name="correct_ordering_numbers">Correct Order!</string>
+    <string name="incorrect_ordering_numbers">Incorrect Order! Try again.</string>
+    <string name="compare_numbers1">Compare Numbers</string>
+
+
+    <style name="NumberButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/number_button_background</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+
+    <style name="OrderButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@drawable/order_button_background</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+
+    <style name="NumberEditTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/number_edittext_background</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+
+
+</resources>
